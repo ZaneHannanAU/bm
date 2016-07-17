@@ -2,7 +2,9 @@
 for(i=0;i<document.images.length;i++)
 {
  // if document.images[i].getAttribute("data-src"){ // If there's a "data-src" attribute on them
-  document.images[i].src = document.images[i].getAttribute("data-src");  // Set the src value to that of the data-src value
+  // Set the src value to that of the data-src value
+  document.images[i].src = document.images[i].getAttribute("data-src");
+  // Force visibility
   document.images[i].style.visibility = "visible";
   document.images[i].style.opacity = 1;
  // }
